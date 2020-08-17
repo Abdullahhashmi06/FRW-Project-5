@@ -88,7 +88,7 @@ const TextCarousel = (props) => {
             <Row>
                 <Col className="col-sm-12 col-md-6">
                     <div className="heroLeft"></div>
-                    <img src={Hero2} alt="hero-2" />
+                    <img src={Hero2} alt="hero-2" className="hero2" />
                 </Col>
 
                 <Col className="col-sm-12 col-md-6 mt-5 carousleDiv">

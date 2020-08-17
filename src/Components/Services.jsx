@@ -15,7 +15,7 @@ AOS.init();
 const Services = () => {
     return (
         <div>
-            <section className="mt-5 features-section" id="features">
+            <section className="mt-3 features-section" id="features">
                 <Container>
                     <Row>
                         <Col className="md-12 text-center">

@@ -6,8 +6,8 @@ const IntroSect = () => {
     return (
         <section id="introSect">
         <Container>
-            <Row>
-                <Col className="col-sm-12 col-md-6 introDiv mt-5">
+            <Row className="introRow">
+                <Col className="order-2 order-md-1 col-12 mb-5 col-md-6 introDiv mt-5">
                     <div>
                         <h1 className="mainHeading">The Top Notch Marketing And Sales Leads For Over 25 Years</h1>
                     </div>
@@ -19,8 +19,7 @@ const IntroSect = () => {
                         </h4>
                     </div>
                 </Col>
-                <Col className="col-sm-12 col-md-6  mt-5">
-            
+                <Col className="order-1 order-md-2 text-center col-12 col-md-6 mt-5 hero1">
                     <img src={Hero} alt="SVG" />
                 </Col>
             </Row>

@@ -24,7 +24,8 @@
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 75%;
-	animation: index-body-animation .6s ease-out forwards;
+    animation: index-body-animation .6s ease-out forwards;
+    overflow-x: hidden;
 }
 
 dropdown .dropdown-menu{
@@ -80,7 +81,9 @@ dropdown .dropdown-menu{
   margin-bottom: 20px !important;
 }
 
-
+#clickForm {
+    color: black;
+}
 
 .introDiv {
   display: flex;
@@ -96,6 +99,8 @@ dropdown .dropdown-menu{
 
 .features-section {
     padding: 80px 0 80px;
+    background-color: #fafafa !important;
+    border-top: 7px solid #d5e3f1 !important;
 }
  
 .features-section .features-item {
@@ -137,6 +142,7 @@ dropdown .dropdown-menu{
 #aboutServ {
    height: 600px;
    padding: 3%;
+   z-index: 9999999 !important;
 }
 
 #flag {
@@ -178,69 +184,67 @@ dropdown .dropdown-menu{
     color: black !important;
     opacity: 0.9;
     overflow: hidden !important;
- }
+}
  
- 
- .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
- }
- 
- .carousel-control-prev-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
- }
- 
- .carousleDiv {
-     margin-top: 10% !important;
- }
- 
- .carousle {
-     transition: ease 2s !important;
- }
- 
- .carHead {
-     font-weight: 400 !important;
-     font-size: 40px;
-     text-align: justify;
- }
- 
- .heroLeft {
-     position: absolute;
-     z-index: -999999 !important;
-     top: -120px;
-     /* right: 0; */
-     left: -750px;
-     opacity: 0.3;
-     width: 1100px;
-     height: 700px;
-     background-image: url("./Images/cloud.png");
-     background-size: cover;
- }
- 
- .carTextDiv {
-     width: 90%; 
-     margin-left: 10%;
- }
- 
- .carousleLi {
-     float: left !important;
- }
- 
- ol li {
-     font-size: 25px !important;
- }
- 
- .ol {
-     display: block !important;
-     margin-left: -1% !important;
- }
- 
- .ol2 {
-     display: block !important;
-     margin-left: -3% !important;
- }
- 
- /* carousle sect styles end */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousleDiv {
+    margin-top: 10% !important;
+}
+
+.carousle {
+    transition: ease 2s !important;
+}
+
+.carHead {
+    font-weight: 400 !important;
+    font-size: 40px;
+    text-align: justify;
+}
+
+.heroLeft {
+    position: absolute;
+    z-index: -999999 !important;
+    top: -100px;
+    /* right: 0; */
+    left: -750px;
+    opacity: 0.3;
+    width: 1100px;
+    height: 700px;
+    background-image: url("./Images/cloud.png");
+    background-size: cover;
+}
+
+.carTextDiv {
+    width: 90%; 
+    margin-left: 10%;
+}
+
+.carousleLi {
+    float: left !important;
+}
+
+ol li {
+    font-size: 25px !important;
+}
+
+.ol {
+    display: block !important;
+    margin-left: -1% !important;
+}
+
+.ol2 {
+    display: block !important;
+    margin-left: -3% !important;
+}
+
+ /* carousle sect styles end */
 
  /* Features Section */
  
@@ -278,7 +282,6 @@ dropdown .dropdown-menu{
 .features-item2 {
     padding-bottom: 10px !important;
 }
-
 
 /* footer */
 
@@ -355,11 +358,68 @@ footer .section-title {
     color: #fff;
 }
 
-@media (max-width:767px){
+@media (max-width:450px){  
+    .mainHeading {
+        font-size: 25px !important;
+        margin-top: 20px !important;
+    }
+
+    .deliverText1 {
+        font-size: 20px !important;
+        margin-top: -30px !important;
+        font-weight: 300 !important;
+        width: 250px !important;
+    }
+
+    .hero1 {
+        margin-top: 50px !important;
+        margin-right: 100px !important;
+    }
+
+    .carHead {
+        font-size: 35px !important;
+        width: 500px !important; 
+    }
+
+    .hero2 {
+        margin-top: 30px;
+        position: relative;
+        top: -50px;
+    }
+
+    .about {
+        font-size: 55px !important;
+    }
+
+    .carousleDiv {
+        position: relative;
+        top: -100px;
+        width: 1000px !important;
+    }
+
+    .carText2 {
+        font-size: 20px !important;
+        text-align: left !important;
+        line-height: 28px;
+        width: 250px;
+        margin-left: -30px;
+    }
+
+    .introRow:nth-child(2) {
+        order: 1 !important; 
+    }
+
+    #flag {
+        left: -100px;
+        width: 700px;
+        top: 100px;
+        height: 350px;
+    }
+
 	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
 }
